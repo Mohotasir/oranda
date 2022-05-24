@@ -11,6 +11,7 @@
     --main-font:'Roboto', sans-serif;
     --main-clr: #fff;
     --second-clr: #04AA6D;
+    --background: rgba(6, 6, 49, 0.999);
 }
 
 
@@ -29,9 +30,14 @@ nav .logo{
     flex-wrap: wrap;
     padding: 10px 0;
   
-}
-.nav-main-menu{
   
+}
+.sticky{
+    position: fixed;
+    z-index: 999;
+   transition: .1s;
+    width: 100%;
+    background-color: rgba(4, 4, 41, 0.943);
 }
 .nav-main-menu .menu{
     display: flex;
@@ -62,7 +68,7 @@ nav .logo{
     
 }
 .menu ul li :hover {
-    color: #71caa9;
+    color: #aadbc9;
     transition: .5s;
   
 }
@@ -72,7 +78,7 @@ nav .logo{
     left: 10px;
     position: absolute;
     height: 1px;
-    width: 50px;
+    width: 0px;
     
     background-color:#62dcaf;
     display: block;
@@ -81,9 +87,10 @@ nav .logo{
     transform: scale();
 
 }
+
 .menu ul li a:hover::after{
     display: block;
-    width: 0px;
+    width: 50px;
 }
 .contact-btn{
     display: flex;
@@ -111,20 +118,45 @@ nav .logo{
 
 /*home section start*/
  #hero-section{
-    background: rgba(6, 6, 49, 0.999);
+    background:var(--background);
     height: 100vh;
+    position: relative;
+  
+   
+   
 }
 
 .hero-img img{
     width: 500px;
+   
 }
-.hero-img{
+.hero-img img {
+  
+   
+    animation: move 3s infinite;
+  
+}
+.hero-img {
     margin-top: 50px;
+    position: relative;
+    display: block;
     
 }
+@keyframes move {
+    form{opacity: 1;}
+    25%{}
+    50%{
+        opacity: 0;;
+     
+    }
+    75%{}
+    to{opacity: 1;}
+}
+
 .hero{
-    display: flex;
+    
     align-items: center;
+    display: flex;
     
 }
 .hero-des h1{
@@ -146,3 +178,61 @@ nav .logo{
      font-weight: 300;
      margin-top: -30px;
 }
+/*hero section end*/
+
+
+/*direction section*/
+#direction{
+     background-color: var(--background);
+     padding: 100px 0;
+
+  
+
+}
+#direction .dir-heading h1{
+    font-size: 40px;
+    font-family: var(--secodary-font);
+    color: var(--main-clr);
+    text-align: center;
+}
+#direction .dir-heading  span{
+    color: #04AA6D;
+    font-size: 50px;
+    margin-right: 10px;
+    position: relative;
+}
+#direction .dir-heading  h1 ::after{
+    content: '';
+    top: 100%;
+    left: 0px;
+    position: absolute;
+    height: 4px;
+    width: 60px;
+    
+    background-color:#62dcaf;
+    display: block;
+    border-radius: 20px;
+    
+
+}
+.dir-img img{
+    max-width: 150px;
+    max-height:100px;
+}
+
+.dir-img{
+    padding: 40px 10px;
+}
+.dir-img p{
+    font-size: 18px;
+    color: var(--main-clr);
+    font-family: var(--main-font);
+    padding: 10px 0;
+
+}
+.dir-img .dot{
+    
+    margin-top: 50px;
+    max-width: 200px;
+}
+ 
