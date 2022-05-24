@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --secodary-font:'Bebas Neue', cursive;
+    --main-font:'Roboto', sans-serif;
+    --main-clr: #fff;
+    --second-clr: #04AA6D;
+}
+
+
+/*navbar section start*/
+nav .logo{
+    font-size: 35px;
+    font-weight: 700;
+    color: #04AA6D;
+    font-family: var(--secodary-font);
+    margin-left: 80px;
+}
+#main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  
+}
+.nav-main-menu{
+  
+}
+.nav-main-menu .menu{
+    display: flex;
+    align-items: center;
+   margin-right: 100px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    
+}
+.menu ul li{
+    list-style: none;
+   position: relative;
+   
+}
+.menu ul li a{
+    text-decoration: none;
+    font-style: 18px;
+    padding: 10px 12px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: var(--main-font);
+  
+    
+}
+.menu ul li :hover {
+    color: #71caa9;
+    transition: .5s;
+  
+}
+ .nav-main-menu .menu ul li  ::after{
+    content: '';
+    top: 100%;
+    left: 10px;
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    
+    background-color:#62dcaf;
+    display: block;
+    border-radius: 20px;
+    transition: .5s;
+    transform: scale();
+
+}
+.menu ul li a:hover::after{
+    display: block;
+    width: 0px;
+}
+.contact-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-btn a{
+    background-color: #04AA6D;
+    font-size: 20px;
+    font-family: var(--secodary-font);
+    color: #fff;
+    padding: 5px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    
+}
+.contact-btn a:hover{
+    background-color: white;
+    color: #04AA6D;
+    transition: .4s;
+    
+}
+/*navbar section end*/
+
+/*home section start*/
+ #hero-section{
+    background: rgba(6, 6, 49, 0.999);
+    height: 100vh;
+}
+
+.hero-img img{
+    width: 500px;
+}
+.hero-img{
+    margin-top: 50px;
+    
+}
+.hero{
+    display: flex;
+    align-items: center;
+    
+}
+.hero-des h1{
+    font-size: 90px;
+    font-family: var(--secodary-font);
+    color: white;
+}
+.hero-des  span{
+    font-size: 140px;
+    color: #04AA6D;
+    font-weight: 500;
+    margin-right: -15px;
+   
+}
+.hero-des p{
+     color: #c6f3e2;
+     font-size: 30px;
+     font-family: var(--main-font);
+     font-weight: 300;
+     margin-top: -30px;
+}
