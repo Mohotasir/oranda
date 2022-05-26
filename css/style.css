@@ -185,9 +185,59 @@ nav .logo{
 #direction{
      background-color: var(--background);
      padding: 100px 0;
+     position: relative;
 
+}
+
+#direction form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background);
+    padding:  20px  15px;
+    box-shadow: 0px 5px 15px rgba(196, 189, 189, 0.2);
+    display: none;
+    max-width: 300px;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+    transition: .5s;
   
+   
+}
+ #direction  #sbmt-btn{
+     background-color: #04AA6D;
+     color: white;
+     font-family: var(--secodary-font);
+     font-size: 20px;
+     border-radius: 10px;
+ }
 
+#direction form input{
+    margin: 10px 0;
+    padding: 6px 12px;
+    outline: none;
+}
+#direction form .icon{
+    color: white;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 6px;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 6px;
+    font-weight: 700;
+    margin-top: -10px;
+   
 }
 #direction .dir-heading h1{
     font-size: 40px;
@@ -218,8 +268,13 @@ nav .logo{
 .dir-img img{
     max-width: 150px;
     max-height:100px;
+   
 }
-
+.dir-img :hover p{
+  color: #04AA6D;
+  transition: .4s;
+  cursor: pointer;
+}
 .dir-img{
     padding: 40px 10px;
 }
