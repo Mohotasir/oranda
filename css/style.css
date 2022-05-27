@@ -29,15 +29,18 @@ nav .logo{
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 10px 0;
-  
+    background-color: var(--background);
+    border-bottom: 1px solid rgb(52, 58, 102);
+    transition: .5s;
   
 }
 .sticky{
     position: fixed;
     z-index: 999;
-   transition: .1s;
+   transition: .5s;
     width: 100%;
-    background-color: rgba(4, 4, 41, 0.943);
+   background-color: rgba(11, 11, 81, 0.819);
+  
 }
 .nav-main-menu .menu{
     display: flex;
@@ -118,9 +121,10 @@ nav .logo{
 
 /*home section start*/
  #hero-section{
-    background:var(--background);
+    background:url(/img/endless-constellation\ \(2\).svg);
     height: 100vh;
     position: relative;
+   
   
    
    
@@ -183,8 +187,8 @@ nav .logo{
 
 /*direction section*/
 #direction{
-     background-color: var(--background);
-     padding: 100px 0;
+    background-color: var(--background);
+     padding: 80px 0;
      position: relative;
 
 }
@@ -291,3 +295,17 @@ nav .logo{
     max-width: 200px;
 }
  
+/*package section*/
+
+#package-section{
+ background: url(/img/subtle-prism.svg);
+ padding: 30px;
+ background-size: cover;
+ 
+}
+#package-section .package-heading h1{
+    font-size: 40px;
+    font-family: var(--secodary-font);
+    color: var(--main-clr);
+   text-align: center;
+}
