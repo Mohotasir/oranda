@@ -12,40 +12,49 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
+      <div id="loader">
+
+      </div>
+         
     <section id="hero-section">
        <nav id="main-nav">
            <div class="logo">ORANDA</div>
            <div class="nav-main-menu">
+            <div class="icon-nav">
+                <i class="fa-solid fa-bars"></i>
+              </div>
                <div class="menu">
+                      <div class="cut-nav">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                      </div>
                    <ul>
                        <li><a href="#">Home</a></li>
-                       <li><a href="#">About</a></li>
-                       <li><a href="#">Business</a></li>
+                       <li><a href="#about-section">About</a></li>
+                       <li><a href="#package-section">Package</a></li>
                        <li><a href="#">Paybill</a></li>
-                       <li><a href="#">Contact</a></li>
+                       <li><a href="#">Coverage</a></li>
+                       
                        
                    </ul>
                     <div class="contact-btn">
-                        <a href="#">CONTACT</a>
+                        <a href="#footer-section">CONTACT</a>
                     </div>
                </div>
            </div>
        </nav>
-       
-       <div class="container-fluid">
-           <div class="row">
-               <div class=" hero col-lg-6 ">
+         
+            <div class=" hero-div container">
+          <video src="/img/World - 1992.mp4" autoplay muted loop></video>
+         
+           <div class="hero row">
+               <div class="  col-lg-12  col-sm-12 col-xs-12">
                    
                    <div class="hero-des">
-                       <h1><span>O</span> RANDA <span>N</span> etwork</h1>
-                       <p>High Speed Internet Service Provider</p>
+                       <p class="first-cld">Fast internet connection</p>
+                       <h1>Connecting mind,around the world</h1>
+                       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus alias iure unde culpa. Velit modi iure a sunt nemo quo unde dolorum architecto id libero.</p>
+                       <a href="#">Go to package datails</a>
                    </div>
-                
-               </div>
-               <div class="col-lg-6">
-                  <div class="hero-img">
-                    <img src="/img/img.svg" alt="">
-                  </div>
                </div>
            </div>
        </div>
@@ -53,13 +62,13 @@
    </section>
      
    <section id="direction">
-         <div class="container">
+         <div class="direction-con container">
              <div class="  row">
-                 <div class="col-lg-12">
+                 <!-- <div class="col-lg-12 col-sm-12" >
                      <div class="dir-heading">
                          <h1> <span>Enjoy</span>  Better</h1>
-                     </div>
-                 </div>
+                     </div> 
+                 </div> -->
              </div>
              <div class=" dir-img row">
                 <form action="#">
@@ -73,24 +82,24 @@
                     <input type="text" name="number" id="number" placeholder="enter number">
                     <input id="sbmt-btn" type="submit" value="submit">
                 </form>
-                 <div class="col-lg-1"></div> 
-                 <div class="col-lg-2">
+                 <div class="col-lg-1 col-sm-1 col-xs-1"></div> 
+                 <div class="dir-img col-lg-2 col-sm-2 col-xs-2">
                       <img src="/img/img3.svg" alt="">
                        <p>Network Coverage</p>
                     </div> 
-                 <div class=" dot col-lg-2"><img   src="/img/Line-1.f074919a.svg" alt=""></div> 
-                 <div class="col-lg-2">
+                 <div class=" dot col-lg-2 col-sm-2"><img   src="/img/Line-1.f074919a.svg" alt=""></div> 
+                 <div class=" dir-img col-lg-2 col-sm-2 col-xs-2" >
                       <img src="/img/img1.svg" alt="">
                       <p>choose package</p>
                 </div> 
-                 <div class=" dot col-lg-2"> <img src="/img/Line-2.cdec3617.svg" alt=""></div> 
-                 <div class="col-lg-2">
+                 <div class=" dot col-lg-2 col-sm-2"> <img src="/img/Line-2.cdec3617.svg" alt=""></div> 
+                 <div class=" dir-img col-lg-2 col-sm-2 col-xs-2">
                    
 
                       <img id="connect" src="/img/img4.svg" alt="">
                       <p>Get connected</p>
                     </div> 
-                 <div class="col-lg-1">
+                 <div class="col-lg-1 col-sm-1 col-xs-1">
                     
                  </div> 
              </div>
@@ -101,35 +110,165 @@
    <section id="package-section">
           <div class="container">
               <div class="  row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-12 col-sm-12">
                     <div class="package-heading">
-                        <h1 >CHOOSE YOUR PACKAGE</h1>
+                        <h1 >CHOOSE <span>YOUR</span>  PACKAGE</h1>
                       </div>
                   </div>
                    </div>
                    <div class="row">
-                       <div class="col-lg-4">
+                       <div class="col-lg-4 col-sm-6">
                            <div class="package-card">
                                <div class="main-card">
                                    <div class="up-side-card">
-                                         <div class="title">platinum</div>
+                                         
                                          <div class="mbps">5<sub>mbps</sub></div>
                                          <div class="price"><sup>BDT</sup>500</div>
                                    </div>
                                       <div class="down-side-card">
-                                          
+                                            <ul>
+                                                <li>5 mbps speed / Off-Peak </li>
+                                                <li>5mbps speed / Peak </li>
+                                                <li>24/7 Support </li>
+                                                <li>- </li>
+                                                <li>- </li>
+                                                <li>-</li>
+                                            </ul>
+                                            <div class="package-btn">
+                                                <a href="#">Get Package</a>
+                                            </div>
                                       </div>
                                </div>
                            </div>
                        </div>
-
-                   </div>
+                       <div class="col-lg-4 col-sm-6">
+                        <div class="package-card">
+                            <div class="main-card">
+                                <div class="up-side-card">
+                                      
+                                      <div class="mbps">10<sub>mbps</sub></div>
+                                      <div class="price"><sup>BDT</sup>1000</div>
+                                </div>
+                                   <div class="down-side-card">
+                                         <ul>
+                                             <li>10 mbps speed / Off-Peak </li>
+                                             <li>10mbps speed / Peak </li>
+                                             <li>24/7 Support </li>
+                                             <li>100 mbps Youtube </li>
+                                             <li>100 mbps Facebook </li>
+                                             <li>100 mbps bdix </li>
+                                         </ul>
+                                         <div class="package-btn">
+                                             <a href="#">Get Package</a>
+                                         </div>
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="package-card">
+                            <div class="main-card">
+                                <div class="up-side-card">
+                                      
+                                      <div class="mbps">20<sub>mbps</sub></div>
+                                      <div class="price"><sup>BDT</sup>1500</div>
+                                </div>
+                                   <div class="down-side-card">
+                                    <ul>
+                                        <li>20 mbps speed / Off-Peak </li>
+                                        <li>20mbps speed / Peak </li>
+                                        <li>24/7 Support </li>
+                                        <li>100 mbps Youtube </li>
+                                        <li>100 mbps Facebook </li>
+                                        <li>100 mbps bdix </li>
+                                    </ul>
+                                         <div class="package-btn">
+                                             <a href="#">Get Package</a>
+                                         </div>
+                                   </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" more-package row">
+                    <div class="col-lg-12">
+                        <a href="package.html">More package <i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </div>
+                </div>
               
                     </div>
                  
    </section>
 
+   <section id="about-section">
+       <div class="container">
+       <div class="row">
+           <div class="col-lg-12 col-sm-12 text-center">
+            <h1 class="about-head">KNOW ABOUT US </h1>
+           </div>
+       </div>
+       <div class="about-us row">
+           <div class="about-description col-lg-6">
+                   <span>It's</span>
+                   <h1>ORANDA NETWORK</h1>
+                   <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+                        dolor numquam consequatur veniam. Illum, facilis consequatur
+                         dolorem veniam labore iure? Non, maxime laboriosam. Dolore 
+                         aut labore hic ducimus harum totam corporis libero, qui facilis 
+                         dolor nulla laborum quisquam animi cupiditate natus perspiciatis
+                          nisi quam alias impedit id! Quasi saepe nostrum tenetur eos obcaecati 
+                          vero quidem ipsum distinctio praesentium quos aspernatur est officiis 
+                          recusandae et, laudantium sequi porro ut ducimus facilis vitae blanditiis
+                           accusantium repellendus! Cupiditate quo ullam doloribus at sapiente optio dolor eaque 
+                           </P>
+           </div>
+           <div class=" about-image col-lg-6">
+                <img src="/img/about.png" alt="">
+           </div>
+       </div>
+    </div>    
 
+   </section>
+
+  <section id="footer-section">
+       <div class="container">
+           <div class="main-footer row"> 
+               <div class="footer-first col-lg-5 col-sm-5">
+                   <h2 class="footer-head">Visit us</h2>
+                   
+                   <div class="mapouter"><div class="gmap_canvas"><iframe width="210" height="179" id="gmap_canvas" src="https://maps.google.com/maps?q=halisohor,B%20block%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2piratebay.org"></a><br><style>.mapouter{position:relative;text-align:right;height:179px;width:210px;}</style><a href="https://www.embedgooglemap.net">how to add map in website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:179px;width:210px;}</style></div></div>
+                   <p>Halisohor,B-block,chattogram</p>
+                </div>
+               <div class="footer-middle col-lg-3 col-sm-3">
+                   <h2 class="footer-head">All Pags</h2>
+                   <ul>
+                       <li><a href="#"><i class="fa-solid fa-circle-right"></i>Home</a></li>
+                       <li><a href="#"><i class="fa-solid fa-circle-right"></i>About</a></li>
+                       <li><a href="#"><i class="fa-solid fa-circle-right"></i>Business</a></li>
+                       <li><a href="#"><i class="fa-solid fa-circle-right"></i>Paybill</a></li>
+                       <li><a href="#"><i class="fa-solid fa-circle-right"></i>contact</a></li>
+                   </ul>
+
+               </div>
+               <div class="footer-last col-lg-4 col-sm-4">
+                     <h2 class="footer-head"> Contact Us</h2>
+                     <p><i class="fa-solid fa-phone-flip"></i></i>+12345678999</p>
+                     <p><i class="fa-solid fa-envelope"></i>oranda@gmail.com</p>
+                     <div class="icon-call">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram-square"></i>
+                     </div>
+               </div>
+             
+
+           </div>
+       </div>
+  </section>
+  <div class="copy-right">
+         COPY RIGHT 2022 . ALL RIGHT RESERVED
+  </div>
 
 
 
