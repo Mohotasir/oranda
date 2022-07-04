@@ -215,7 +215,13 @@ nav .logo{
     font-size: 20px;
     text-decoration: none;
     border-radius: 5px;
+    transition: .4s;
    
+}
+.hero a:hover{
+    background-color:#04aa44;
+    color: white;
+    letter-spacing: 3px;
 }
 .hero-des h1{
     font-size: 60px;
@@ -355,7 +361,7 @@ nav .logo{
 }
 .dir-img .dot{
     
-    margin-top: 50px;
+    margin-top: 90px;
     max-width: 200px;
 }
  
@@ -574,8 +580,7 @@ nav .logo{
     padding: 100px 0px 10px 0px;
     background-color: var(--background);
     transition: .5s;
-    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0% 100%);
-
+    
 }
 .main-footer{}
 .footer-head{
@@ -641,8 +646,29 @@ nav .logo{
     
     transition: .4s;
 }
+.dir-icon{
+    position:absolute;
+    right: 0;
+   
+   
+}
+.fixed-dir{
+    position: fixed;
+    z-index: 999999;
+}
+.dir-icon a{
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #061235;
+    box-shadow: 0px 0px 25px white;
+}
 .copy-right{
     background: var(--background);
+    position: relative;
     text-align: center;
     padding: 20px 0;
     letter-spacing: 2px;

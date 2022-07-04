@@ -1,23 +1,31 @@
 
 
-/*package page start*/
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-#package-hero-sec{
-    height: 70vh;
-    background-color: rgb(11, 11, 54);
-    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
-}
-
-#package-hero-sec .package-hero h1{
-    text-align: center;
-    color: white;
  
-    font-size: 40px;
-    text-transform: uppercase;
-
+ :root{
+    --secodary-font:'Bebas Neue', cursive;
+    --main-font:'Roboto', sans-serif;
+    --main-clr: #fff;
+    --second-clr: #04AA6D;
+    --background: #04021B;
 }
-.package-hero{
-    
-    display: grid;
-   
+.basic-class{
+    height: 70vh;
+    background-color: rgb(17, 17, 65);
+}
+.basic-div{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .basic-heading{
+     font-size: 60px;
+     font-family: var(--secodary-font);
+     text-shadow: 3px 3px 5px rgb(21, 172, 84);
+     align-items: center;
+     display: flex;
+     color: white;
 }
